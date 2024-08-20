@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".fragment.AddNoteFragment">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Insert event:"
+        android:textSize="34sp" />
+
+    <EditText
+        android:id="@+id/eTNameNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/pickDateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#A8A99387"
+        android:textColor="@color/black"
+        android:text="Choose date" />
+
+
+    <TextView
+        android:id="@+id/tVChosenDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="chosen date" />
+
+    <RadioGroup
+        android:id="@+id/urgencyGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/urgentOption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="urgent"
+            android:textColor="@color/radio_button_selector"/>
+
+        <RadioButton
+            android:id="@+id/notUrgentOption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="not urgent"
+            android:textColor="@color/radio_button_selector"/>
+
+    </RadioGroup>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnCreateNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#A8A99387"
+        android:textColor="@color/black"
+        android:text="create" />
+
+</LinearLayout>

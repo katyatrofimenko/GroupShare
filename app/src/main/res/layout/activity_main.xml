@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/phone_number_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone Number"
+        android:inputType="phone"
+        android:minHeight="48dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/send_code_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Verification Code"
+        android:textColor="@color/black"
+        android:backgroundTint="#A8A99387"/>
+
+    <EditText
+        android:id="@+id/code_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Verification Code"
+        android:inputType="number"
+        tools:ignore="TouchTargetSizeCheck"
+        android:minHeight="48dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/verify_code_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verify Code"
+        android:textColor="@color/black"
+        android:backgroundTint="#A8A99387"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/resend_code_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resend Code"
+        android:textColor="@color/black"
+        android:backgroundTint="#A8A99387"/>
+
+    <LinearLayout
+        android:id="@+id/lLEnterFirstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please inert your name: for the first time:" />
+
+        <EditText
+            android:id="@+id/eTEnterNameFirstTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="full name"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/btnEnterFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter" />
+
+    </LinearLayout>
+
+</LinearLayout>
